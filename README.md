@@ -2,7 +2,7 @@
 ### One. Extract texture using 3d face model fitting：  
 https://github.com/LansburyCH/eos-expression-aware-proxy.git  
 We used google eos to do the 3D face fitting.  
-The model chosen is the bfm2017 model.
+The model chosen is the bfm2017 model.  
 The last thing we need to use is the texture of the face.  
 After the face reconstruction step, the result output is like files in 'exmaple_data/' directory.
 #### Prerequisites
