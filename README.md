@@ -1,4 +1,4 @@
-## Medium-Scale Wrinkle Reconstruction Using One RGB Image.   
+# Medium-Scale Wrinkle Reconstruction Using One RGB Image.   
 ### One. Extract texture using 3d face model fitting：  
 https://github.com/LansburyCH/eos-expression-aware-proxy.git  
 We used google eos to do the 3D face fitting.  
