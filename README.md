@@ -1,9 +1,10 @@
 ## Medium-Scale Wrinkle Reconstruction Using One RGB Image.   
 ### One. Extract texture using 3d face model fitting：  
 https://github.com/LansburyCH/eos-expression-aware-proxy.git  
-We are using google eos to do the 3D face fitting.  
+We used google eos to do the 3D face fitting.  
 The model chosen is the bfm2017 model.
 The last thing we need to use is the texture of the face.  
+After the face reconstruction step, the result output is like files in 'exmaple_data/' directory.
 #### Prerequisites
 + Visual Studio 2017 (>=15.5)  
 + Boost (>=1.50.0)  
