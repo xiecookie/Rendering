@@ -47,9 +47,9 @@ You need to set up the generated dll file.
 Generate a file with the suffix pyd file.  
 
 ## Four. Training data  
-Directory：introduce/metahuman_trainpatch  
+**Directory：introduce/metahuman_trainpatch**  
 +  **data** is the texture map and replacement map data  
-+  **data_train** is the patch data used  
-+  the DOG is the confidence data of the wrinkles after Gaussian differencing  
-+  patch is the annotation of the patch in the texture  
++  **data_train** is the patch data used to train  
++  **DOG** is the confidence score map of the wrinkles after Gaussian differencing  
++  **patch** is the annotation of the patch in the texture  
 
