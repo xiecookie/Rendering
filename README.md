@@ -27,9 +27,13 @@ If there is a problem calling pyd, you need to configure the C++ regressor envir
 + opencv 3.4.16  
 + eigen 3.3.9  
 + pybind11 2.8.1  
++ python 3.6 
 
-Configure x64 Release.  
-You need to change the output file format from output configuration from exe to dll and change the extension name from .exe to .pyd.  
+**These libraries has been downloaded and compiled and use Cmake to generate the visualstudio project.**  
+The include and library directories are already configured.  
+If there is a problem with these libraries, you may need to download and compile them again.  
+Configure x64 Release and Right click on the Wrinkle project and click on "Generate".  
+You need to **change the output file format from output configuration from exe to dll** and **change the extension name from .exe to .pyd**.  
 Generate a file with the suffix pyd file.  
 
 ## Three. Single image wrinkle reconstruction：python configuration
