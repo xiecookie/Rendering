@@ -34,7 +34,8 @@ The include and library directories are already configured.
 If there is a problem with these libraries, you may need to download and compile them again.  
 Configure x64 Release and Right click on the Wrinkle project and click on "Generate".  
 You need to **change the output file format from output configuration from exe to dll** and **change the extension name from .exe to .pyd**.  
-Generate a file with the suffix pyd file.  
+  
+**Generate 'Wrinkle.pyd' file and move it to the /wrinkle-py after changing the name to 'regressor.pyd'.**  
 
 ## Three. Single image wrinkle reconstruction：python configuration
 Run wrin_dis.py directly.  
