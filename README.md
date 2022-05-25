@@ -3,6 +3,15 @@
 <img src="/wrinkle-py/example_output/example.jpg">
 </p>  
   
+## brief introduction;
+The whole wrinkle extraction framework consists of several parts.
++ The input of wrinkle extraction is an RGB face picture, the picture is preferably full of light, and the face wrinkles are distinct in the picture, all subsequent steps will be generated based on this picture.  
++ All subsequent steps will be generated based on this image. A 3D face fitting will be performed on the RGB face image, and the fitted model is best chosen as a 3D face model with reasonable uv map stretching and compression.  
++ After getting the texture, we will do a differential Gaussian operation on the texture and do average filtering to extract the possibility distribution of wrinkles in a certain part, and we will select a fixed size pixel block from high to low according to the result of the Gaussian differential.  
++ The pixel blocks are extracted and put into the already trained regressors to get the single channel pixel blocks in the replacement mapping. By combining these replacement mapping code blocks, a replacement mapping map can be obtained.  
++ After that, the blendshape is transformed into a normal map to get the wrinkle map of the image, and then the wrinkle map of the specified part of the image is obtained by mask, and a complete wrinkle map is obtained by combining the wrinkle maps of multiple images.  
++ Finally, a motion map of blendshape can be calculated by blendshape, using motion map to know which areas of the face are activated. map, which improves the storage efficiency.  
+
 ## One. Extract texture using 3d face model fitting：  
 https://github.com/LansburyCH/eos-expression-aware-proxy.git  
 We used google eos to do the 3D face fitting.  
